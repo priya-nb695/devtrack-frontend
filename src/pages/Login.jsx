@@ -23,52 +23,52 @@ function Login() {
     }
   };
 
- return (
-  <div className="page">
-    <div className="card">
-      <h2 className="title">Welcome Back 👋</h2>
-      <p className="subtitle">Login using your email</p>
+  return (
+    <div className="page">
+      <div className="card">
+        <h2 className="title">Welcome Back 👋</h2>
+        <p className="subtitle">Login using your email</p>
 
-      {errorMsg && <div className="error">{errorMsg}</div>}
+        {errorMsg && <div className="error">{errorMsg}</div>}
 
-      <form onSubmit={handleSubmit} className="form">
-        <label className="label">Email Address</label>
-        <input
-          type="email"
-          placeholder="Enter your email"
-          className="input"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
-
-        <label className="label">Password</label>
-        <div className="passwordBox">
+        <form onSubmit={handleSubmit} className="form">
+          <label className="label">Email Address</label>
           <input
-            type={showPassword ? "text" : "password"}
-            placeholder="Enter your password"
+            type="email"
+            placeholder="Enter your email"
             className="input"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             required
           />
-          <span
-            className="eye"
-            onClick={() => setShowPassword(!showPassword)}
-          >
-            {showPassword ? "🙈" : "👁️"}
-          </span>
-        </div>
 
-        <button type="submit" className="button">Login</button>
-      </form>
+          <label className="label">Password</label>
+          <div className="passwordBox">
+            <input
+              type={showPassword ? "text" : "password"}
+              placeholder="Enter your password"
+              className="input"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+            />
+            <span
+              className="eye"
+              onClick={() => setShowPassword(!showPassword)}
+            >
+              {showPassword ? "🙈" : "👁️"}
+            </span>
+          </div>
 
-      <p className="footer">
-        New user? <Link to="/register">Create account</Link>
-      </p>
+          <button type="submit" className="button">Login</button>
+        </form>
+
+        <p className="footer">
+          New user? <Link to="/register">Create account</Link>
+        </p>
+      </div>
     </div>
-  </div>
-);
+  );
 }
 
 export default Login;
