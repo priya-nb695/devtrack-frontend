@@ -1,0 +1,98 @@
+/* Full page background */
+.page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Login card */
+.card {
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  width: 350px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.title {
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  margin-bottom: 20px;
+  color: gray;
+}
+
+/* Form */
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* Password input wrapper */
+.passwordBox {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding-right: 10px;
+}
+
+.passwordBox input {
+  border: none;
+  margin: 0;
+  flex: 1;
+}
+
+.eye {
+  cursor: pointer;
+}
+
+/* Button */
+.button {
+  margin-top: 15px;
+  padding: 12px;
+  background: #4facfe;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background: #2f8cff;
+}
+
+.footer {
+  margin-top: 15px;
+  text-align: center;
+}
+
+/* Error box */
+.error {
+  background: #ffe6e6;
+  color: #cc0000;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  text-align: center;
+}
