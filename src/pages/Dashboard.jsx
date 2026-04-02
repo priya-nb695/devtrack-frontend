@@ -37,18 +37,18 @@ function Dashboard() {
           placeholder="Issue title"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
-        /><br/><br/>
+        /><br /><br />
 
         <textarea
           placeholder="Issue description"
           value={description}
           onChange={(e) => setDescription(e.target.value)}
-        /><br/><br/>
+        /><br /><br />
 
         <button>Create Issue</button>
       </form>
 
-      <hr/>
+      <hr />
 
       {issues.map((issue) => (
         <div key={issue._id} style={{ border: "1px solid black", padding: 10, marginTop: 10 }}>
